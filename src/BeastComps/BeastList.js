@@ -4,7 +4,9 @@ class BeastList extends Component {
 
     render() {
         return (
-            <div id="monList"></div>
+            <div id="monList">
+                
+            </div>
         )
     }
 } 
