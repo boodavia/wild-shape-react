@@ -14,10 +14,20 @@ class App extends Component {
     crList: ['0','1/8','1/4','1/2','1']
   }
 
-  calcCrList = (event) => {
+  isMoonDruid = () => {
+    this.setState({moonDruid: !this.state.moonDruid}, () => {
+      this.calcCrList(this.state.druidLevel);
+    })
+  }
+
+  changeLevel = (event) => {
     let level = event.target.value
-    console.log(level)
-    this.setState({druidLevel: level});
+    this.setState({druidLevel: level}, () => {
+      this.calcCrList(level);
+    });  
+  }
+
+  calcCrList = (level) => {
     if ( this.state.moonDruid === true ){
       if ( level >=2 && level < 6 ) {
         this.setState({crList : ['0','1/8','1/4','1/2','1']});
@@ -42,6 +52,7 @@ class App extends Component {
     }
     //console.log(this.state.crList)
   }
+
   render() {
     return (
       <section id="beastMain">
@@ -53,11 +64,15 @@ class App extends Component {
           <nav>
             <h1>
               Druid Level
-              <DruidLevel level={this.state.druidLevel} change={(event)=> this.calcCrList(event)} />
+              <DruidLevel level={this.state.druidLevel} change={(event)=> this.changeLevel(event)} />
+              
             </h1>
-            <svg id="moonCircle" className={this.state.moonDruid ? null : 'active'}><use xlinkHref={icons +'#icon-moon'}  /></svg>
+            <svg id="moonCircle" className={this.state.moonDruid ? 'active' : null} onClick={() => this.isMoonDruid()}><use xlinkHref={icons +'#icon-moon'}  /></svg>
           </nav>
         </header>
+        <h2>{this.state.druidLevel}</h2>
+        <h2>{this.state.moonDruid ? 'true' : 'false'}</h2>
+        <h3>{this.state.crList}</h3>
         <BeastList />
       </section>
     );
