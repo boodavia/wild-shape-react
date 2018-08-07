@@ -6,10 +6,10 @@ const BeastItem = (props) => {
         <li className='beast'>
             <h3>{props.name}</h3>
             <div>
-                <svg><use xlinkHref={icons +'#icon-swim'} /></svg>
-			    <svg><use xlinkHref={icons +'#icon-fly'} /></svg>
-				<svg><use xlinkHref={icons +'#icon-climb'} /></svg>
-				<svg><use xlinkHref={icons +'#icon-burrow'} /></svg>
+                {props.swim ? <svg><use xlinkHref={icons +'#icon-swim'} /></svg> : null}
+			    {props.fly ? <svg><use xlinkHref={icons +'#icon-fly'} /></svg> : null}
+				{props.climb ? <svg><use xlinkHref={icons +'#icon-climb'} /></svg> : null}
+				{props.burrow ? <svg><use xlinkHref={icons +'#icon-burrow'} /></svg> : null}
             </div>
         </li>
     )

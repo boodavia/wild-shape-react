@@ -1647,7 +1647,6 @@ const beastData ={
             hp: "13 (3d8)",
             speed: "10 ft.",
             fly: "50 ft.",
-            swim: "50 ft.",
             strength: "10",
             dexterity: "14",
             constitution: "10",

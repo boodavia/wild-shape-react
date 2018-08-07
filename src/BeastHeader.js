@@ -11,7 +11,13 @@ const BeastHeader = (props) => {
             </div>
             <ul>
                 {filteredRes.map((item, i) => 
-                    <BeastItem name={item.name} key={'beast_'+i} />
+                    <BeastItem 
+                        name={item.name} 
+                        key={'beast_'+i} 
+                        fly={item.fly}
+                        swim={item.swim} 
+                        burrow={item.burrow} 
+                        climb={item.climb} />
                 )}
             </ul>
         </div>

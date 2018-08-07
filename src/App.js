@@ -11,7 +11,7 @@ class App extends Component {
 		beastData: BeastData,
 		druidLevel: 4,
 		moonDruid: true,
-		crList: ['0', '1/8', '1/4', '1/2', '1'],
+		crList: ['1', '1/2', '1/4', '1/8', '0'],
 		filteredBeasts: {}
 	}
 
@@ -34,24 +34,24 @@ class App extends Component {
 	calcCrList = (level) => {
 		if (this.state.moonDruid === true) {
 			if (level >= 2 && level < 6) {
-				this.setState({ crList: ['0', '1/8', '1/4', '1/2', '1'] });
+				this.setState({ crList: ['1', '1/2', '1/4', '1/8', '0'] });
 			} else {
-				let preList = ['0', '1/8', '1/4', '1/2', '1'];
+				let preList = ['1', '1/2', '1/4', '1/8', '0'];
 				for (let i = 6; i <= level; i++) {
 					if (i % 3 === 0) {
 						let newNum = i / 3;
-						preList.push(newNum.toString());
+						preList.unshift(newNum.toString());
 					}
 				}
 				this.setState({ crList: preList });
 			}
 		} else {
 			if (level >= 2 && level < 4) {
-				this.setState({ crList: ['0', '1/8', '1/4'] });
+				this.setState({ crList: ['1/4', '1/8', '0'] });
 			} else if (level >= 4 && level < 8) {
-				this.setState({ crList: ['0', '1/8', '1/4', '1/2'] });
+				this.setState({ crList: ['1/2', '1/4', '1/8', '0'] });
 			} else {
-				this.setState({ crList: ['0', '1/8', '1/4', '1/2', '1'] });
+				this.setState({ crList: ['1', '1/2', '1/4', '1/8', '0'] });
 			}
 		}
 	}
