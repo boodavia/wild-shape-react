@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import BeastList from './BeastComps/BeastList';
+import BeastHeader from './BeastComps/BeastList';
+//import BeastListItem from './BeastComps/BeastList';
 import BeastData from './BeastComps/BeastData';
 
 import icons from './styles/fonts/icons.svg';
@@ -14,12 +15,14 @@ class App extends Component {
     crList: ['0','1/8','1/4','1/2','1']
   }
 
+  //Is the player a Moon Druid
   isMoonDruid = () => {
     this.setState({moonDruid: !this.state.moonDruid}, () => {
       this.calcCrList(this.state.druidLevel);
     })
   }
 
+  //Change level handler
   changeLevel = (event) => {
     let level = event.target.value
     this.setState({druidLevel: level}, () => {
@@ -27,6 +30,7 @@ class App extends Component {
     });  
   }
 
+  //Calculate the CR list of beast
   calcCrList = (level) => {
     if ( this.state.moonDruid === true ){
       if ( level >=2 && level < 6 ) {
@@ -47,13 +51,25 @@ class App extends Component {
       } else if ( level >=4 && level < 8 ) {
         this.setState({crList : ['0','1/8','1/4','1/2']});
       } else {
-        this.setState({crList : ['0','1/8','1/4','1/2','1']})
+        this.setState({crList : ['0','1/8','1/4','1/2','1']});
       }
     }
-    //console.log(this.state.crList)
   }
 
   render() {
+    const crHeaders = (
+      <div id='monList'>
+        {this.state.crList.map((item, i) =>
+          <BeastHeader cr={item} key={i} />
+        )}
+        {/* {
+          this.state.crList.forEach( function(element, index) { 
+            
+          })
+        } */}
+      </div>
+    )
+    //return <BeastHeader cr={element.cr} key={index} />
     return (
       <section id="beastMain">
         <header>
@@ -70,10 +86,7 @@ class App extends Component {
             <svg id="moonCircle" className={this.state.moonDruid ? 'active' : null} onClick={() => this.isMoonDruid()}><use xlinkHref={icons +'#icon-moon'}  /></svg>
           </nav>
         </header>
-        <h2>{this.state.druidLevel}</h2>
-        <h2>{this.state.moonDruid ? 'true' : 'false'}</h2>
-        <h3>{this.state.crList}</h3>
-        <BeastList />
+        {crHeaders}
       </section>
     );
   }
