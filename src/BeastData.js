@@ -50,10 +50,12 @@ const beastData ={
             charisma: "5",
             passive: "11",
             cr: "3",
-            action: {
-                actionName: "Tail",
-                text: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
-            }
+            action: [
+                {
+                    actionName: "Tail",
+                    text: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+                }
+            ]
         },
         {
             name: "Ape",
@@ -106,11 +108,13 @@ const beastData ={
             charisma: "5",
             passive: "10",
             cr: "1/4",
-            action: {
-                actionName: "Beak",
-                text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
-                attack: "Beak|4|1d8+2"
-            }
+            action: [
+                {
+                    actionName: "Beak",
+                    text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
+                    attack: "Beak|4|1d8+2"
+                }
+            ]   
         },
         {
             name: "Baboon",
@@ -133,11 +137,13 @@ const beastData ={
                 traitName: "Pack Tactics",
                 text: "The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 ft. of the creature and the ally isn't incapacitated."
             },
-            action: {
-                actionName: "Bite",
-                text: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 — 1) piercing damage.",
-                attack: "Bite|1|1d4-1"
-            }
+            action: [
+                {
+                    actionName: "Bite",
+                    text: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 — 1) piercing damage.",
+                    attack: "Bite|1|1d4-1"
+                }
+            ]
         },
         {
             name: "Badger",
@@ -161,11 +167,13 @@ const beastData ={
                 traitName: "Keen Smell",
                 text: "The badger has advantage on Wisdom (Perception) checks that rely on smell."
             },
-            action: {
-                actionName: "Bite",
-                text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
-                attack: "Bite|2|1"
-            }
+            action: [
+                {
+                    actionName: "Bite",
+                    text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
+                    attack: "Bite|2|1"
+                }
+            ]
         },
         {
             name: "Bat",
@@ -195,11 +203,13 @@ const beastData ={
                     text: "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
                 }
             ],
-            action: {
-                actionName: "Bite",
-                text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
-                attack: "Bite||1"
-            }
+            action: [
+                {
+                    actionName: "Bite",
+                    text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
+                    attack: "Bite||1"
+                }
+            ]
         },
         {
             name: "Black Bear",
@@ -267,11 +277,13 @@ const beastData ={
                     text: "The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 ft. of the creature and the ally isn't incapacitated."
                 }
             ],
-            action: {
-                actionName: "Beak",
-                text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
-                attack: "Beak|4|1d4+2"
-            }
+            action: [
+                {
+                    actionName: "Beak",
+                    text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+                    attack: "Beak|4|1d4+2"
+                }
+            ]
         },
         {
             name: "Boar",
@@ -300,11 +312,13 @@ const beastData ={
                     text: "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
                 }
             ],
-            action: {
-                actionName: "Tusk",
-                text: "Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
-                attack: "Tusk|3|1d6+1"
-            }
+            action: [
+                {
+                    actionName: "Tusk",
+                    text: "Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
+                    attack: "Tusk|3|1d6+1"
+                }
+            ]
         },
         {
             name: "Brown Bear",
@@ -361,11 +375,13 @@ const beastData ={
             charisma: "5",
             passive: "9",
             cr: "1/8",
-            action: {
-                actionName: "Bite",
-                text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
-                attack: "Bite|5|1d4"
-            }
+            action: [
+                {
+                    actionName: "Bite",
+                    text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+                    attack: "Bite|5|1d4"
+                }
+            ]
         },
         {
             name: "Cat",
@@ -389,11 +405,13 @@ const beastData ={
                 traitName: "Keen Smell",
                 text: "The cat has advantage on Wisdom (Perception) checks that rely on smell."
             },
-            action: {
-                actionName: "Claws",
-                text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
-                attack: "Claws||1"
-            }
+            action: [
+                {
+                    actionName: "Claws",
+                    text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
+                    attack: "Claws||1"
+                }
+            ]
         },
         {
             name: "Cave Bear",
@@ -489,11 +507,13 @@ const beastData ={
                 traitName: "Amphibious",
                 text: "The crab can breathe air and water."
             },
-            action: {
-                actionName: "Claw",
-                text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.",
-                attack: "Claw||1"
-            }
+            action: [
+                {
+                    actionName: "Claw",
+                    text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.",
+                    attack: "Claw||1"
+                }
+            ]
         },
         {
             name: "Crocodile",
@@ -517,11 +537,13 @@ const beastData ={
                 traitName: "Hold Breath",
                 text: "The crocodile can hold its breath for 15 minutes."
             },
-            action: {
-                actionName: "Bite",
-                text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target",
-                attack: "Bite|4|1d10+2"
-            }
+            action: [
+                {
+                    actionName: "Bite",
+                    text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target",
+                    attack: "Bite|4|1d10+2"
+                }
+            ]
         },
         {
             name: "Deer",
@@ -539,11 +561,13 @@ const beastData ={
             charisma: "5",
             passive: "12",
             cr: "0",
-            action: {
-                actionName: "Bite",
-                text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
-                attack: "Bite|2|1d4"
-            }
+            action: [
+                {
+                    actionName: "Bite",
+                    text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
+                    attack: "Bite|2|1d4"
+                }
+            ]
         },
         {
             name: "Dire Wolf",
@@ -572,7 +596,7 @@ const beastData ={
                     text: "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
                 attack: "Bite|5|2d6+3"
@@ -594,11 +618,13 @@ const beastData ={
             charisma: "7",
             passive: "10",
             cr: "1/4",
-            action: {
-                actionName: "Hooves",
-                text: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
-                attack: "Hooves|6|2d4+4"
-            }
+            action: [
+                {
+                    actionName: "Hooves",
+                    text: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
+                    attack: "Hooves|6|2d4+4"
+                }
+            ]
         },
         {
             name: "Eagle",
@@ -622,11 +648,14 @@ const beastData ={
                 traitName: "Keen Sight",
                 text: "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
             },
-            action: {
-                actionName: "Talons",
-                text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
-                attack: "Talons|4|1d4+2"
-            }
+            action: [
+                {
+                    actionName: "Talons",
+                    text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
+                    attack: "Talons|4|1d4+2"
+                }
+
+            ]
         },
         {
             name: "Elephant",
@@ -716,7 +745,7 @@ const beastData ={
                 traitName: "Flyby",
                 text: "The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage.",
                 attack: "Bite|6|1"
@@ -819,7 +848,7 @@ const beastData ={
                     text: "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
                 attack: "Bite|4|1d6+2"
@@ -852,7 +881,7 @@ const beastData ={
                     text: "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Tusk",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
                 attack: "Tusk|5|2d6+3"
@@ -876,7 +905,7 @@ const beastData ={
             senses: "blindsight 30 ft.",
             passive: "8",
             cr: "1/4",
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
                 attack: "Bite|4|1d4+2"
@@ -937,7 +966,7 @@ const beastData ={
                 traitName: "Amphibious",
                 text: "The crab can breathe air and water."
             },
-            action: {
+            action: [{
                 actionName: "Claw",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.",
                 attack: "Claw|3|1d6+1"
@@ -1079,7 +1108,7 @@ const beastData ={
                 traitName: "Illumination",
                 text: "The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 ft.."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 — 1) slashing damage.",
                 attack: "Bite|1|1d6-1"
@@ -1172,7 +1201,7 @@ const beastData ={
                     text: "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Ram",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
                 attack: "Ram|5|2d4+3"
@@ -1199,7 +1228,7 @@ const beastData ={
                 traitName: "Rampage",
                 text: "When the hyena reduces a creature to 0 hit points with a melee attack on its turn, the hyena can take a bonus action to move up to half its speed and make a bite attack."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
                 attack: "Bite|5|1d6+3"
@@ -1233,7 +1262,7 @@ const beastData ={
                     text: "The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
                 attack: "Bite|4|1d8+2"
@@ -1314,7 +1343,7 @@ const beastData ={
                     text: "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Talons",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage.",
                 attack: "Talons|3|2d6+1"
@@ -1339,7 +1368,7 @@ const beastData ={
             senses: "blindsight 10 ft.",
             passive: "12",
             cr: "1/4",
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
                 attack: "Bite|6|1d4+4"
@@ -1372,7 +1401,7 @@ const beastData ={
                     text: "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 ft. of the creature and the ally isn't incapacitated."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
                 attack: "Bite|4|1d4+2"
@@ -1395,7 +1424,7 @@ const beastData ={
             senses: "darkvision 60 ft.",
             passive: "10",
             cr: "1/8",
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 (1d6) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies.",
                 attack: "Bite|3|1d4+1"
@@ -1463,7 +1492,7 @@ const beastData ={
                     text: "The sea horse can breathe only underwater."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Ram",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
                 attack: "|3|1d6+1"
@@ -1497,7 +1526,7 @@ const beastData ={
                     text: "The shark can breathe only underwater."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage.",
                 attack: "Bite|9|3d10+6"
@@ -1655,7 +1684,7 @@ const beastData ={
             charisma: "3",
             passive: "10",
             cr: "1/2",
-            action: {
+            action: [{
                 actionName: "Sting",
                 text: "Sting. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
                 attack: "Sting|4|1d6+2"
@@ -1683,7 +1712,7 @@ const beastData ={
                 traitName: "Keen Hearing and Smell",
                 text: "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
                 attack: "Bite|5|1d4+3"
@@ -1722,7 +1751,7 @@ const beastData ={
                     text: "The spider ignores movement restrictions caused by webbing."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
                 attack: "Bite|3|1d6+1"
@@ -1755,7 +1784,7 @@ const beastData ={
                     text: "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Ram",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.",
                 attack: "Ram|3|1d4+1"
@@ -1783,7 +1812,7 @@ const beastData ={
                 traitName: "Keen Sight",
                 text: "The hawk has advantage on Wisdom (Perception) checks that rely on sight."
             },
-            action: {
+            action: [{
                 actionName: "Talons",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
                 attack: "Talons|5|1"
@@ -1817,7 +1846,7 @@ const beastData ={
                     text: "The shark can breathe only underwater."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
                 attack: "Bite|6|2d8+4"
@@ -1844,7 +1873,7 @@ const beastData ={
                 traitName: "Pack Tactics",
                 text: "The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 ft. of the creature and the ally isn't incapacitated."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.",
                 attack: "Bite|2|1d6"
@@ -1877,7 +1906,7 @@ const beastData ={
                     text: "The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 ft. of the creature and the ally isn't incapacitated."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 — 1) piercing damage.",
                 attack: "Bite|1|1d4-1"
@@ -1915,7 +1944,7 @@ const beastData ={
                     text: "The whale has advantage on Wisdom (Perception) checks that rely on hearing."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage."
             }
@@ -1986,7 +2015,7 @@ const beastData ={
             senses: "darkvision 30 ft.",
             passive: "9",
             cr: "0",
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
                 attack: "Bite||1"
@@ -2046,7 +2075,7 @@ const beastData ={
                 traitName: "Keen Hearing and Smell",
                 text: "The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
                 attack: "Bite|3|1d6+1"
@@ -2078,7 +2107,7 @@ const beastData ={
                     text: "The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Hooves",
                 text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
                 attack: "Hooves|4|1d4+2"
@@ -2158,7 +2187,7 @@ const beastData ={
                     text: "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Talons",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
                 attack: "Talons|3|1"
@@ -2227,7 +2256,7 @@ const beastData ={
                 traitName: "Hold Breath",
                 text: "The plesiosaurus can hold its breath for 1 hour."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage.",
                 attack: "Bite|6|3d6+4"
@@ -2251,7 +2280,7 @@ const beastData ={
             senses: "blindsight 10 ft.",
             passive: "10",
             cr: "1/8",
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.",
                 attack: "Bite|5|1"
@@ -2312,7 +2341,7 @@ const beastData ={
             charisma: "7",
             passive: "10",
             cr: "1/8",
-            action: {
+            action: [{
                 actionName: "Hooves",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage.",
                 attack: "Hooves|4|2d4+2"
@@ -2340,7 +2369,7 @@ const beastData ={
                 traitName: "Flyby",
                 text: "The pteranodon doesn't provoke opportunity attacks when it flies out of an enemy's reach."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage"
             }
@@ -2372,7 +2401,7 @@ const beastData ={
                     text: "The quipper can breathe only underwater."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
                 attack: "Bite|5|1"
@@ -2399,7 +2428,7 @@ const beastData ={
                 traitName: "Keen Smell",
                 text: "The rat has advantage on Wisdom (Perception) checks that rely on smell."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
                 attack: "Bite||1"
@@ -2427,7 +2456,7 @@ const beastData ={
                 traitName: "Mimicry",
                 text: "The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check."
             },
-            action: {
+            action: [{
                 actionName: "Beak",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
             }
@@ -2460,7 +2489,7 @@ const beastData ={
                     text: "The shark can breathe only underwater."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
                 attack: "Bite|4|1d8+2"
@@ -2487,7 +2516,7 @@ const beastData ={
                 text: "If the rhinoceros moves at least 20 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
                 attack: "Charge||2d8"
             },
-            action: {
+            action: [{
                 actionName: "Gore",
                 text: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
                 attack: "Gore|7|2d8+5"
@@ -2509,7 +2538,7 @@ const beastData ={
             charisma: "7",
             passive: "10",
             cr: "1/4",
-            action: {
+            action: [{
                 actionName: "Hooves",
                 text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
                 attack: "Hooves|2|2d4+3"
@@ -2572,7 +2601,7 @@ const beastData ={
             senses: "blindsight 10 ft.",
             passive: "9",
             cr: "0",
-            action: {
+            action: [{
                 actionName: "Sting",
                 text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.",
                 attack: "Sting|2|1"
@@ -2632,7 +2661,7 @@ const beastData ={
                     text: "The spider ignores movement restrictions caused by webbing."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.",
                 attack: "Bite|4|1"
@@ -2656,7 +2685,7 @@ const beastData ={
             senses: "darkvision 60 ft.",
             passive: "9",
             cr: "1/8",
-            action: {
+            action: [{
                 actionName: "Blood Drain",
                 text: [
                     "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.",
@@ -2766,7 +2795,7 @@ const beastData ={
                     text: "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Beak",
                 text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
                 attack: "Beak|2|1d4"
@@ -2792,7 +2821,7 @@ const beastData ={
                 traitName: "Trampling Charge",
                 text: "If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
             },
-            action: {
+            action: [{
                 actionName: "Hooves",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
                 attack: "|4|2d6+4"
@@ -2819,7 +2848,7 @@ const beastData ={
                 traitName: "Keen Hearing and Smell",
                 text: "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
             },
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
                 attack: "Bite|5|1"
@@ -2852,7 +2881,7 @@ const beastData ={
                     text: "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
                 }
             ],
-            action: {
+            action: [{
                 actionName: "Bite",
                 text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
                 attack: "Bite|4|2d4+2"

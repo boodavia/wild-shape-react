@@ -13,3 +13,5 @@ const BeastModal = (props) => {
         </section>
     )
 }
+
+export default BeastModal;
